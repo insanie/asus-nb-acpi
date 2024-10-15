@@ -1,0 +1,11 @@
+[Unit]
+Description=Applies asus-nb-acpi-ctl script
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/asus-nb-acpi-ctl.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target

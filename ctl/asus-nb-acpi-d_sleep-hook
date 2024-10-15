@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# A systemd sleep hook to restart the service after sleep
+
+if [[ $1 == "post" ]]
+then
+  systemctl restart asus-nb-acpi-d.service
+fi

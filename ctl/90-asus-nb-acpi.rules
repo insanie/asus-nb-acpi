@@ -1,0 +1,1 @@
+ACTION=="change", SUBSYSTEM=="power_supply", ATTR{online}=="*", RUN+="/usr/bin/systemctl restart asus-nb-acpi-d.service"
